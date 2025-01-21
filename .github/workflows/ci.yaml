@@ -1,0 +1,9 @@
+name: On est là
+on: [push]
+jobs:
+  build:
+    runs-on: buntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Exécution d'un script simple
+      run: echo "Le workflow CI est déclenché apr un push sur Github!"
